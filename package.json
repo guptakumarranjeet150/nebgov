@@ -10,10 +10,10 @@
     "tools/simulation"
   ],
   "scripts": {
-    "build:sdk": "pnpm --filter @nebgov/sdk build",
-    "build:app": "pnpm --filter nebgov-app build",
-    "build:cli": "pnpm --filter @nebgov/cli build",
-    "dev": "pnpm --filter nebgov-app dev",
+    "build:sdk": "node init && pnpm --filter @nebgov/sdk build",
+    "build:app": "node init && pnpm --filter nebgov-app build",
+    "build:cli": "node init && pnpm --filter @nebgov/cli build",
+    "dev": "node init && pnpm --filter nebgov-app dev",
     "test:sdk": "pnpm --filter @nebgov/sdk test",
     "test:app": "pnpm --filter nebgov-app test",
     "simulate": "tsx scripts/simulate.ts",
