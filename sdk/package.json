@@ -8,7 +8,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "docs": "typedoc",
     "test": "jest",
     "test:integration": "jest --config jest.integration.config.js --runInBand",
